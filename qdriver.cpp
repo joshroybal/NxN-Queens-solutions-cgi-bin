@@ -27,8 +27,8 @@ int main()
    std::cout << "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"/includes/chessboard.css\"/>" << std::endl;
    std::cout << "</head>" << std::endl;
    std::cout << "<body>" << std::endl;
-   std::cout << "\n<header><p>cgi-bin C++ nxn queens solutiobs</p></header>";
-   std::cout << "\n<p><a href=\"/index.php\">Home</a> | <a href=\"/cgi-bin/nqueens.cgi?step1\">Back</a></p>";
+   std::cout << "<header><p>cgi-bin C++ nxn queens solutions</p></header>" << std::endl;
+   std::cout << "<p><a href=\"/index.php\">Home</a> | <a href=\"/cgi-bin/nqueens.cgi?step1\">Back</a></p>" << std::endl;
    // initial pass - print the form
    if (strcmp(card, "step1") == 0) {
       std::cout << "<form action=\"nqueens.cgi?step2\" method=\"post\">";
@@ -57,8 +57,8 @@ int main()
       composer.place_queens(0);
       std::cout << "<p>" << composer.get_total() << " solutions computed</p>" << std::endl;
    }
-   std::cout << "\n<p><a href=\"/index.php\">Home</a> | <a href=\"/cgi-bin/nqueens.cgi?step1\">Back</a></p>";
-   std::cout << "\n<footer><p>CopyLeft 2017 Josh Roybal - All Wrongs Reserved</p></footer>";
+   std::cout << "<p><a href=\"/index.php\">Home</a> | <a href=\"/cgi-bin/nqueens.cgi?step1\">Back</a></p>" << std::endl;
+   std::cout << "<footer><p>CopyLeft 2017 Josh Roybal - All Wrongs Reserved</p></footer>" << std::endl;
    std::cout << "</body>" << std::endl;
    std::cout << "</html>" << std::endl;
    return 0;
