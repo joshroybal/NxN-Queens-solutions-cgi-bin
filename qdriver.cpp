@@ -50,40 +50,8 @@ int main()
          return 1;
       }
       queens_on_board composer(n);    // constructor
-      // html & css chores - put out the board
-      int board_dim = n * 60;
-      // chessboard
-      std::cout << "<style type=\"text/css\">" << std::endl;
-      std::cout << ".chessboard {" << std::endl;
-      std::cout << "width: " << board_dim << "px;" << std::endl;
-      std::cout << "height: " << board_dim << "px;" << std::endl;
-      // std::cout << "max-width: 100%;" << std::endl;
-      std::cout << "margin: 20px;" << std::endl;
-      // std::cout << "border: 25px solid #333;" << std::endl;
-      std::cout << "display: table;" << std::endl;
-      std::cout << "table-layout: fixed;" << std::endl;
-      std::cout << "}" << std::endl;
-      // black square
-      std::cout << ".black {" << std::endl;
-      std::cout << "width: 60px;" << std::endl;
-      std::cout << "height: 60px;" << std::endl;
-      std::cout << "background-color: #228b22;" << std::endl;
-      std::cout << "font-size:50px;" << std::endl;
-      std::cout << "text-align:center;" << std::endl;
-      std::cout << "display: table-cell;" << std::endl;
-      std::cout << "vertical-align:middle;" << std::endl;
-      std::cout << "}" << std::endl;
-      // white square
-      std::cout << ".white {" << std::endl;
-      std::cout << "width: 60px;" << std::endl;
-      std::cout << "height: 60px;" << std::endl;
-      std::cout << "background-color: #fffdd0;" << std::endl;
-      std::cout << "font-size:50px;" << std::endl;
-      std::cout << "text-align:center;" << std::endl;
-      std::cout << "display: table-cell;" << std::endl;
-      std::cout << "vertical-align:middle;" << std::endl;
-      std::cout << "}" << std::endl;
-      std::cout << "</style>" << std::endl;
+      // html & css chores - emit the board
+      std::cout << "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"/includes/chessboard.css\"/>" << std::endl;
       std::cout << "</head>" << std::endl;
       std::cout << "<body>" << std::endl;
       // place queens on n x n board

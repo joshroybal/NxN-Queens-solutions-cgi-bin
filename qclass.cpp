@@ -54,19 +54,20 @@ void queens_on_board::update_status_html()
    int board_dim = size * 60;
    std::string color = "black";
    std::cout << "<div>board position " << total << "</div>" << std::endl;
-   std::cout << "<div class=\"chessboard\">" << std::endl;
+   std::cout << "<table class=\"chessboard\">" << std::endl;
    for (int row = 0; row < size; row++)   {
+      std::cout << "<tr>";
       for (int col = 0; col < size; col++) {
          if ((row + col) % 2 == 0)
-            color = "white";
+            color = "\"white\"";
          else
-            color = "black";
+            color = "\"black\"";
          if (col == queen_vector[row])
-            std::cout << "<div class=" << color << ">&#9819;</div>" << std::endl;
+            std::cout << "<td class=" << color << ">&#9819;</td>";
          else
-            std::cout << "<div class=" << color << "></div>" << std::endl;;
+            std::cout << "<td class=" << color << "></td>";
       }
-        std::cout << std::endl;
+      std::cout << "</tr>" << std::endl;
    }
-   std::cout << "</div>" << std::endl;
+   std::cout << "</table>" << std::endl;
 }
