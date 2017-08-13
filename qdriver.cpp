@@ -23,7 +23,6 @@ int main()
    std::cout << "<meta charset=\"utf-8\">" << std::endl;
    std::cout << "<title>Sputnik</title>" << std::endl;
    std::cout << "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" << std::endl;
-   // std::cout << "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"/includes/style.css\"/>" << std::endl;
    std::cout << "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"/includes/chessboard.css\"/>" << std::endl;
    std::cout << "</head>" << std::endl;
    std::cout << "<body>" << std::endl;
