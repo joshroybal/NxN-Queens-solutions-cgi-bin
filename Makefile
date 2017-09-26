@@ -1,5 +1,5 @@
 nqueens.cgi: qdriver.o qclass.o
-	g++ -static -o nqueens.cgi qdriver.o qclass.o
+	g++ -static -s -o nqueens.cgi qdriver.o qclass.o
 	
 qdriver.o: qdriver.cpp qclass.hpp
 	g++ -O2 -c qdriver.cpp
